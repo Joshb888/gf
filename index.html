@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Staff list</title>
+</head>
+<body>
+
+  <div class="buttons">
+    <button id="login">Login</button>
+  </div>
+
+  <div id="alert-container">
+     
+
+  </div>
+    <div class="container mt-4" id="modal-login">
+      <span class="closeBtn">&times;</span>
+        <h1 class="display-4 text-center">
+          <i class="fas fa-book-open text-primary"></i> Stuff <span class="text-success">List</span></h1>
+
+
+          <form id="user-form">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" class="form-control" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+              <label for="position">Position</label>
+              <input type="text" id="position" class="form-control" placeholder="Position">
+            </div>
+
+            <div class="form-group">
+              <label for="salary">Salary</label>
+              <input type="number" id="salary" class="form-control" placeholder="Salary">
+            </div>
+
+            <input type="submit" value="Add User" class="btn btn-success btn-block">
+          </form>
+
+
+          <table class="table table-striped mt-5">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>User ID</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="user-list"></tbody>
+          </table>
+      </div>    
+
+      <script src="./JS/script.js"></script>
+</body>
+</html>
